@@ -68,127 +68,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-iOS上架流程" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/03/12/iOS上架流程/" class="article-date">
-  <time datetime="2016-03-12T13:04:38.590Z" itemprop="datePublished">2016-03-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<p>title: iOS APP上架流程</p>
-<h1 id="iOS-APP上架流程"><a href="#iOS-APP上架流程" class="headerlink" title="iOS APP上架流程"></a>iOS APP上架流程</h1><ol>
-<li><p>登录iTunes Connectwa网站</p>
-<p>首先我们需要准备好一个开发者账号，然后登录<a href="https://itunesconnect.apple.com" target="_blank" rel="external">iTunes Connect</a>网站,进入如下界面     </p>
-</li>
-</ol>
-<p><img src="http://i.imgur.com/lJBlICa.jpg" alt="">  </p>
-<p>   点击进入”我的APP”    </p>
-<p>   右上角加号按钮选择“新建APP   </p>
-<p> <img src="http://i.imgur.com/9D5jW9k.png" alt="">”</p>
-<p>   页面会弹出如下小窗口 </p>
-<p>   <img src="http://i.imgur.com/ttT25c2.png" alt=""></p>
-<p>   平台选择iOS  </p>
-<p>   名称填写自己应用的名称，这里要准备几个备用名称以防止名称已被占用  </p>
-<p>   主要语言选择简体：simplified Chinese  </p>
-<p>   套装ID是需要我们自己去注册的，按照提示点击进入“<a href="https://developer.apple.com/account/ios/identifiers/bundle/bundleList." target="_blank" rel="external">开发人员门户网站（Developer Portal）</a>”注册SKU填写注册好的套装ID即可   </p>
-<ol>
-<li><p>注册套装ID<br>进入<a href="https://developer.apple.com/account/ios/identifiers/bundle/bundleList." target="_blank" rel="external">开发人员门户网站（Developer Portal）</a>后我们会看到如下页面   </p>
-<p>点击加号新建 </p>
-</li>
-</ol>
-<p><img src="http://i.imgur.com/MBraQTp.png" alt=""></p>
-<p>   主要填写name和bundle ID    </p>
-<p>   name写应用的英文名或者拼音就可以   </p>
-<p>   bundle ID的格式一般是这样的：cn.tedu.iosapp  </p>
-<p><img src="http://i.imgur.com/HAqhrZS.jpg" alt="">  </p>
-<p><img src="http://i.imgur.com/3KQApDV.png" alt="">      </p>
-<p>  然后根据网页提示一次点击continue,submit,done bundleID就注册好了   </p>
-<ol>
-<li>回到iTunes Connect<br>继续新建APP     </li>
-</ol>
-<p><img src="http://i.imgur.com/yEOVjPj.png" alt="">   </p>
-<p>  选择套装ID的时候可能需要等一分钟左右才能看到我们刚刚申请的bundleID,选择页面填写完整就可以创建啦   </p>
-<p>  APP创建成功，就可以去打包项目         </p>
-<ol>
-<li><p>打包项目<br>打开Xcode，找需要打包的项目，在build设备这栏选择Generic iOS Device<br><img src="http://i.imgur.com/mSOl6CD.png" alt="">    </p>
-<p>然后在TARGETS下的General-Identity填写  </p>
-<p>Bundle Identitier要填写上一步注册的bundle ID      </p>
-<p>Version版本一般写1.0    </p>
-<p>Build也是1.0      </p>
-<p>Team就选择开发者账号即可  </p>
-</li>
-</ol>
-<p><img src="http://i.imgur.com/IOjIQxy.jpg" alt="">   </p>
-<p>  填好了就可以打包了：Product-Archive  </p>
-<p><img src="http://i.imgur.com/nFrm40c.png" alt=""> </p>
-<p>  稍等片刻，Xcode会进入打包界面   </p>
-<p>  点击upload to app store 按钮  </p>
-<p><img src="http://i.imgur.com/tQxy1tc.jpg" alt="">    </p>
-<p>  选择开发者账户，第一次进入这步的时候，需要添加一下用到的账户，根据提示操作就可以之后在同一台电脑操作会自动选择已有账户    </p>
-<p>  点击choose<br>  <img src="http://i.imgur.com/xZHNUBI.png" alt="">    </p>
-<p>  然后upload就可以等着啦    </p>
-<p>  <img src="http://i.imgur.com/pU2VHGp.png" alt="">     </p>
-<p>  顺利的话（项目的启动图片、APPicon符合规定）几分钟后，就会看到赏心悦目的下图了  </p>
-<p>  done一下，OK，项目打包完成   </p>
-<p><img src="http://i.imgur.com/qyIaN6y.png" alt="">   </p>
-<ol>
-<li>再次回到iTunes Connect<br>填写APP信息，必填的就一个，类别-主要   </li>
-</ol>
-<p><img src="http://i.imgur.com/3yYJ2h7.png" alt="">  </p>
-<p>   按照自己的应用实际情况选择合适的类别就可以    </p>
-<p><img src="http://i.imgur.com/e239Xh4.png" alt="">   </p>
-<p>   价格与销售范围，必填就一个  </p>
-<p><img src="http://i.imgur.com/BLylga3.png" alt="">    </p>
-<p>   一般选择免费就可以   </p>
-<p><img src="http://i.imgur.com/QgcNIx8.png" alt="">   </p>
-<p>   然后是准备提交   </p>
-<p>   简介图要求四个尺寸每种1-5张，这里注意简介图尺寸一定要对，一定不可以用模拟器截图，否则会被AppStore拒绝<br><img src="http://i.imgur.com/fe6NULE.png" alt="">    </p>
-<p> <img src="http://i.imgur.com/xkd5d8l.png" alt="">  </p>
-<pre><code>项目描述：对自己应用的一个介绍   
-
-关键词：对多个关键词之间用英文格式逗号隔开  
-
-网址：公司网站
-</code></pre><p><img src="http://i.imgur.com/RiaFIjX.png" alt="">  </p>
-<p>  构建版本我们看到的是这个样子的。之前upload成功的项目需要等10分钟左右</p>
-<p>  <img src="http://i.imgur.com/0JxjhOM.png" alt=""> </p>
-<p>  就会变成这个样子，有一个小加号  </p>
-<p><img src="http://i.imgur.com/wmlyZ1c.png" alt="">  </p>
-<p>   点开小加号，这里需要等待苹果服务器的处理，有时候可能是显示正在处理。那再等一会就会变成下面，可选择1.0版本，点击完成   </p>
-<p>   <img src="http://i.imgur.com/wsbu3GW.png" alt="">  </p>
-<p>   APP综合信息  </p>
-<p>   APP图标需要1024x1024尺寸，注意图片格式一定不要有alpha通道   </p>
-<p><img src="http://i.imgur.com/hMbU2CF.png" alt=""><br>  分级：  </p>
-<p>  这里需要编辑一下，全选无时4岁+会对应用出现的文字图片有严格的要求，根据自己的应用实际情况编辑就可以  </p>
-<p><img src="http://i.imgur.com/mNz0Bu1.png" alt=""><br>  审核信息这里填写上架人员的联系信息就可以，一般不会用到需要注意的一点是，如果应用需要有登录注册的测试账号。一定要写在备注里说明，不然苹果大人是会不开心的，拒绝掉的   </p>
-<p><img src="http://i.imgur.com/fASdKUN.png" alt="">   </p>
-<p>   到这里呢，就到最后一步了  </p>
-<p>   iTunes Connect中操作填写的每一步建议先点击右上角储存一下，最后存储之后就可以提交以供审核   </p>
-<p><img src="http://i.imgur.com/FSkfMUb.png" alt="">      </p>
-<p>   之后页面会变成下面这个样子，大概有三条，统统选择后面的“否”，<br>然后提交   </p>
-<p><img src="http://i.imgur.com/9eP6MZb.png" alt="">   </p>
-<p>   此时，大功告成！返回我的APP就 可以看到APP状态处于正在等待审核辣！    </p>
-<p><img src="http://i.imgur.com/RFlbUqn.png" alt="">  </p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/03/12/iOS上架流程/" data-id="cilpcux1y0001qsfllidq285c" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-终于搭建完我的博客啦" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/03/09/终于搭建完我的博客啦/" class="article-date">
@@ -215,7 +94,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/03/09/终于搭建完我的博客啦/" data-id="cilpcux210002qsflxmud3bxa" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/03/09/终于搭建完我的博客啦/" data-id="cilpcz3100002b8flcxnqc58l" class="article-share-link">Share</a>
       
       
     </footer>
@@ -251,7 +130,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/03/09/My-New-Post/" data-id="cilpcux230003qsflk642gi3t" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/03/09/My-New-Post/" data-id="cilpcz30y0001b8flvdmxnrz5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -296,7 +175,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/03/09/hello-world/" data-id="cilpcux1s0000qsflsbus99kd" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/03/09/hello-world/" data-id="cilpcz30q0000b8flf1tirmg1" class="article-share-link">Share</a>
       
       
     </footer>
@@ -334,10 +213,6 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2016/03/12/iOS上架流程/">(no title)</a>
-          </li>
         
           <li>
             <a href="/2016/03/09/终于搭建完我的博客啦/">终于搭建完我的博客啦</a>
