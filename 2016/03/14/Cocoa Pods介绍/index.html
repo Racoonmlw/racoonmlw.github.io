@@ -1,16 +1,11 @@
 <!doctype html>
-
-
-
+<html class="theme-next use-motion ">
+<head>
   
 
-
-<html class="theme-next muse use-motion">
-<head>
-  <meta charset="UTF-8"/>
+<meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
@@ -23,22 +18,22 @@
 
 
 
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
 
 
 
-
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
-
-
-
-
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+    <link href='//fonts.lug.ustc.edu.cn/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  
 
 
+<link rel="stylesheet" type="text/css" href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" />
 
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.2"/>
 
-<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+    <meta name="description" content="既然不能每一条都记住，那么我们干脆把它们记录下来" />
+
 
 
   <meta name="keywords" content="iOS开发," />
@@ -47,14 +42,7 @@
 
 
 
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
-
-
-
-
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
 <meta name="description" content="Cocoa Pods介绍Cocoa Pods是一个负责管理iOS项目中第三方资源的工具，只需要将用到的第三方开源库放到一个名为Podfile的文件中，然后在命令行执行pod  install命令，CocoaPods就会自动将这些第三方资源库的源代码下载下来，并且为当前的工程设置好响应的系统依赖和编译参数。">
@@ -71,26 +59,29 @@
 <meta name="twitter:image" content="http://i.imgur.com/ZuqwB5d.png">
 
 
-
 <script type="text/javascript" id="hexo.configuration">
-  var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Muse',
-    sidebar: {"position":"left","display":"post"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: 0,
-      author: '博主'
-    }
+    scheme: '',
+    sidebar: 'post'
   };
 </script>
+
+
 
   <title> Cocoa Pods介绍 | Racoonmlw'Diaries </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
   
 
 
@@ -98,16 +89,7 @@
 
 
 
-
-
-
-
-  
-  
-    
-  
-
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container one-column page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -136,13 +118,13 @@
   
 
   
-    <ul id="menu" class="menu">
+    <ul id="menu" class="menu ">
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-home"></i> <br />
             
             首页
           </a>
@@ -152,7 +134,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-archive"></i> <br />
             
             归档
           </a>
@@ -162,13 +144,14 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-tags"></i> <br />
             
             标签
           </a>
         </li>
       
 
+      
       
     </ul>
   
@@ -181,17 +164,11 @@
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
+        <div id="content" class="content"> 
 
   <div id="posts" class="posts-expand">
     
 
-  
-  
-
-  
   
   
 
@@ -214,10 +191,7 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
+            发表于
             <time itemprop="dateCreated" datetime="2016-03-14T22:23:33+08:00" content="2016-03-14">
               2016-03-14
             </time>
@@ -231,21 +205,18 @@
 
           
 
-          
-          
-
         </div>
       </header>
     
 
 
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body">
 
       
       
 
       
-        <h1 id="Cocoa-Pods介绍"><a href="#Cocoa-Pods介绍" class="headerlink" title="Cocoa Pods介绍"></a>Cocoa Pods介绍</h1><p>Cocoa Pods是一个负责管理iOS项目中第三方资源的工具，只需要将用到的第三方开源库放到一个名为Podfile的文件中，然后在命令行执行pod  install命令，CocoaPods就会自动将这些第三方资源库的源代码下载下来，并且为当前的工程设置好响应的系统依赖和编译参数。<br> <a id="more"></a><br><strong>安装：</strong>    </p>
+        <span itemprop="articleBody"><h1 id="Cocoa-Pods介绍"><a href="#Cocoa-Pods介绍" class="headerlink" title="Cocoa Pods介绍"></a>Cocoa Pods介绍</h1><p>Cocoa Pods是一个负责管理iOS项目中第三方资源的工具，只需要将用到的第三方开源库放到一个名为Podfile的文件中，然后在命令行执行pod  install命令，CocoaPods就会自动将这些第三方资源库的源代码下载下来，并且为当前的工程设置好响应的系统依赖和编译参数。<br> <a id="more"></a><br><strong>安装：</strong>    </p>
 <ol>
 <li>如何在MAC系统下安装Pod工具<br>－ 安装的方式非常简单，Mac下已经再带了ruby，只要使用ruby的gem命令就可以安装了<br>－ 打开Mac终端工具，在终端运行下面的命令，sudo gem install cocoapods  pod setup<br>－如果失败，运行下面命令<br>gem sources —remove <a href="https://rubygems.org/" target="_blank" rel="external">https://rubygems.org/</a><br>gem sources -a <a href="http://ruby.taobao.org/" target="_blank" rel="external">http://ruby.taobao.org/</a><br>gem sources -l<br>sudo gem install cocoapods<br>－ 如何修复404错误，在终端运行如下命令：<br>gem sources –remove <a href="http://ruby.taobao.org/" target="_blank" rel="external">http://ruby.taobao.org/</a><br>gem sources -a <a href="https://ruby.taobao.org/" target="_blank" rel="external">https://ruby.taobao.org/</a>    </li>
 <li>更新相关步骤<br>－ 如果我们修改了Podfile文件，那么就需要更新CocoaPods，使用下面的ruby的gem命令来更新，sudo gem update cocoapods   </li>
@@ -256,13 +227,7 @@
 <li>步骤 (下面涉及到的命令需要在Mac终端运行)<br>－ 第一步: 使用cd命令切换到你的项目所在的路径,例如：cd /Users/xiao/Documents/Demo-Pods<br>－ 第二步: 接着在终端使用 pod init命令创建Podfile，执行如下命令，可以看到项目下面创建了一个Podfile文件,例如：pod init<br>－ 第三步: 打开Podfile文件夹 添加 pod ‘MJRefresh’ 这样的形式的代码，表示要引入这个框架 (一般可以依照github网站上的README.md<br>中要求的填写)<br>－ 第四步: 在终端输入命令行 pod update 更新Podfile中的所有第三方库<br>－ 备注：<br>a. 如何打开Xcode项目 使用cocoapod⽅方式，更新完成后会自动添加workspace文件，以后工程都要双击以workspace后缀结尾的文件<br>b. 引入pod方式加载的框架头文件 ，需要使用#import &lt;&gt;</li>
 </ol>
 <p><strong>Podfile的样例</strong><br>－ 例如在Podfile中添加AFNetworking第三方库的2.0版本<br><img src="http://i.imgur.com/ZuqwB5d.png" alt=""><br>－使用cd命令切换到Xcode项目的目录下，在终端输入pod install；此时会自动下载AFNetworking库  </p>
-
-      
-    </div>
-
-    <div>
-      
-        
+</span>
       
     </div>
 
@@ -307,20 +272,19 @@
     </div>
   </div>
 
+ </div>
 
-          </div>
-          
-
-
-          
-  <div class="comments" id="comments">
-    
-  </div>
-
-
-        </div>
         
-          
+
+        
+          <div class="comments" id="comments">
+            
+          </div>
+        
+      </div>
+
+      
+        
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -348,12 +312,10 @@
 
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.png"
-               alt="Racoonmlw" />
+          <img class="site-author-image" src="/images/avatar.png" alt="Racoonmlw" itemprop="image"/>
           <p class="site-author-name" itemprop="name">Racoonmlw</p>
-          <p class="site-description motion-element" itemprop="description">既然不能每一条都记住，那么我们干脆把它们记录下来</p>
         </div>
+        <p class="site-description motion-element" itemprop="description">既然不能每一条都记住，那么我们干脆把它们记录下来</p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
@@ -361,17 +323,20 @@
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
-          
-          
 
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">标签</span>
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">标签</span>
               </a>
-            </div>
-          
+          </div>
 
         </nav>
 
@@ -392,20 +357,14 @@
 
       
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator">
-            <i class="fa fa-angle-double-up"></i>
-          </div>
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
           <div class="post-toc">
-            
-              
             
             
               <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Cocoa-Pods介绍"><span class="nav-number">1.</span> <span class="nav-text">Cocoa Pods介绍</span></a></li></ol></div>
             
           </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator">
-            <i class="fa fa-angle-double-down"></i>
-          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
         </section>
       
 
@@ -413,18 +372,16 @@
   </aside>
 
 
-        
-      </div>
+      
     </main>
 
     <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
+      <div class="footer-inner"> <div class="copyright" >
   
   &copy; 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="icon-next-heart fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Racoonmlw</span>
 </div>
@@ -436,63 +393,52 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
+    NexT
   </a>
 </div>
 
 
-
-      </div>
+ </div>
     </footer>
 
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
+    <div class="back-to-top"></div>
   </div>
-
-  
-
-
-  
-
-
-
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
 
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+  
+  
+    
+    
 
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+
+  
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  
 
   <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-
   <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
 
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.5.2" id="motion.global"></script>
 
 
-  
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
-
-
+  <script type="text/javascript" src="/js/nav-toggle.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
   
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
 
-  
-  
-<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
 
 <script type="text/javascript" id="sidebar.toc.highlight">
   $(document).ready(function () {
@@ -572,7 +518,7 @@
 
     function tocOverflowIndicator (indicator, action) {
       var $indicator = $(indicator);
-      var opacity = action === 'show' ? 1 : 0;
+      var opacity = action === 'show' ? 0.4 : 0;
       $indicator.velocity ?
         $indicator.velocity('stop').velocity({
           opacity: opacity
@@ -626,7 +572,7 @@
 
     $('.post-toc a').on('click', function (e) {
       e.preventDefault();
-      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var targetSelector = escapeSelector(this.getAttribute('href'));
       var offset = $(targetSelector).offset().top;
       hasVelocity ?
         html.velocity('stop').velocity('scroll', {
@@ -639,41 +585,45 @@
     });
 
     // Expand sidebar on post detail page by default, when post has a toc.
-    NexT.motion.middleWares.sidebar = function () {
-      var $tocContent = $('.post-toc-content');
-
-      if (CONFIG.scheme !== 'Pisces' && (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always')) {
-        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          NexT.utils.displaySidebar();
-        }
+    var $tocContent = $('.post-toc-content');
+    if (isDesktop() && CONFIG.sidebar === 'post') {
+      if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+        displaySidebar();
       }
-    };
+    }
   });
 </script>
 
 
 
-  
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+      if (isMobile()) {
+        FastClick.attach(document.body);
+      }
 
+      motionIntegrator.bootstrap();
+    });
+  </script>
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
-
-
-
-  
-
-
-
-  
-
-
-
-  
   
   
 
   
+  
 
-
+  
+  <script type="text/javascript" src="/js/lazyload.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#posts").find('img').lazyload({
+        placeholder: "/images/loading.gif",
+        effect: "fadeIn"
+      });
+    });
+  </script>
 </body>
 </html>
